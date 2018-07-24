@@ -8,7 +8,7 @@ from keras.preprocessing.image import ImageDataGenerator
 
 # cnn architecture
 model = Sequential()
-model.add(Convolution2D(32 , 3,3 , input_shape=(128,128,3), activation = 'relu'))
+model.add(Convolution2D(32 , 3,3 , input_shape=(100,100,3), activation = 'relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
 model.add(Convolution2D(32 , 3,3 , activation='relu'))
 model.add(MaxPooling2D(pool_size=(2,2)))
@@ -23,8 +23,8 @@ model.compile(optimizer = 'adam' , loss='categorical_crossentropy' , metrics=['a
 train_set = r'C:\Users\Dell-pc\DEEP LEARNING\fruits-360_dataset\fruits-360\Training'
 test_set = r'C:\Users\Dell-pc\DEEP LEARNING\fruits-360_dataset\fruits-360\Test'
 batch_size = 32
-img_height = 128
-img_width = 128
+img_height = 100
+img_width = 100
 
 train = ImageDataGenerator(
         rescale = 1./255,
