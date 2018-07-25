@@ -92,5 +92,6 @@ model.compile(optimizer = 'adam' , loss='categorical_crossentropy' , metrics=['a
 # fitting the model 
 model.fit(x_train , y_train , batch_size = 32 ,epochs=100 , validation_split=(x_test , y_test))
 
+# evaluating the model
 score = model.evaluate(x_test ,y_test)
 print(score)
