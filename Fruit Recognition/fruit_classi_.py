@@ -72,8 +72,8 @@ x_test = x_test/255.
 x_train = x_train.reshape(x_train[0],img_height,img_width,scale)
 x_test = x_test.reshape(x_test[0],img_height,img_width,scale)
 
-y_train = y_train.utils.to_categorical(y_train , categories)
-y_test = y_test.utils.to_categorical(y_test , categories)
+y_train = np_utils.to_categorical(y_train , categories)
+y_test = np_utils.to_categorical(y_test , categories)
 
 ## CNN ARCHITECTURE
 model = Sequential()
