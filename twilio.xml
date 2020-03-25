@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
-	<Say>
-		A gun is detected in this area.
-	</Say>
+	<Say> A gun is detected in this area.</Say>
 </Response>
